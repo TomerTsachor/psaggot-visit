@@ -151,4 +151,4 @@ def run_button_n_clicks_changed(n_clicks: int, scenario_path: str) -> \
 
 
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port=7324, dev_tools_silence_routes_logging=False, debug=False)
+    server = app.run_server(host='0.0.0.0', port=7324, dev_tools_silence_routes_logging=False, debug=False)
