@@ -35,7 +35,7 @@ def _extract_scenario_number_from_path(path: str) -> int:
 
 
 scenario_files = glob.glob('../resources/scenarios/scenario_*.json')
-scenario_files = ['resources\\scenarios\\scenario_1.json']
+scenario_files = ['resources/scenarios/scenario_1.json']
 
 print('--------------------------')
 print(os.listdir('resources'))
