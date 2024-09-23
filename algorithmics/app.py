@@ -38,8 +38,7 @@ scenario_files = glob.glob('../resources/scenarios/scenario_*.json')
 scenario_files = ['resources\\scenarios\\scenario_1.json']
 
 print('--------------------------')
-print(os.listdir())
-print(os.listdir(".."))
+print(os.listdir('resources\\scenarios'))
 print(len(scenario_files))
 print('--------------------------')
 
