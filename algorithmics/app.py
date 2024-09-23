@@ -39,6 +39,7 @@ scenario_files = ['resources\\scenarios\\scenario_1.json']
 
 print('--------------------------')
 print(os.listdir('resources\\scenarios'))
+
 print(len(scenario_files))
 print('--------------------------')
 
