@@ -1,0 +1,1 @@
+web: gunicorn algorithmics/app:server
