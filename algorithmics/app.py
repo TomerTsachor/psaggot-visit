@@ -34,7 +34,13 @@ def _extract_scenario_number_from_path(path: str) -> int:
 
 
 scenario_files = glob.glob('../resources/scenarios/scenario_*.json')
+
+print('--------------------------')
+print(len(scenario_files))
+print('--------------------------')
+
 scenario_files = sorted(scenario_files, key=lambda name: _extract_scenario_number_from_path(name))
+
 
 colors = {
     'background': '#111111',
