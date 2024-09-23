@@ -1,1 +1,1 @@
-web: gunicorn algorithmics/app:server
+web: gunicorn algorithmics.app:server
