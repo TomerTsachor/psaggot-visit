@@ -274,7 +274,7 @@ def get_submission_path(scenario_number: int) -> str:
     :param scenario_number: given scenario
     :return: path to submission data of the given scenario
     """
-    return f'../resources/submissions/scenario_{scenario_number}_submission.json'
+    return f'resources/submissions/scenario_{scenario_number}_submission.json'
 
 
 def load_submission_dict(scenario_number: int) -> Dict:
