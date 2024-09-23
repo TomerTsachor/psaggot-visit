@@ -49,6 +49,7 @@ colors = {
 }
 
 app = dash.Dash(__name__, external_stylesheets=[r'./assets/bWLwgP.css'])
+server = app.server
 
 app.layout = html.Div([
     html.H1('The Most Best Application Ever', style={'text-align': 'center', 'font-family': 'Courier New',
@@ -157,5 +158,4 @@ def run_button_n_clicks_changed(n_clicks: int, scenario_path: str) -> \
 
 
 if __name__ == '__main__':
-    server = app.server
     app.run_server(host='0.0.0.0', port=7324, dev_tools_silence_routes_logging=False, debug=False)
