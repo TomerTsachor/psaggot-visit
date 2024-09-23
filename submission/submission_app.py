@@ -58,6 +58,7 @@ usernames = {user['username']: user['password'] for user in users.values()}
 
 app = DashProxy(__name__, transforms=[TriggerTransform(), MultiplexerTransform()],
                 external_stylesheets=[r'./assets/bWLwgP.css'])
+server = app.server
 auth = dash_auth.BasicAuth(
     app,
     usernames
