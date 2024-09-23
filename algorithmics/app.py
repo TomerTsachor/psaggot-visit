@@ -42,7 +42,6 @@ print('--------------------------')
 
 scenario_files = sorted(scenario_files, key=lambda name: _extract_scenario_number_from_path(name))
 
-
 colors = {
     'background': '#111111',
     'h1': '#7FDBFF',
@@ -158,4 +157,5 @@ def run_button_n_clicks_changed(n_clicks: int, scenario_path: str) -> \
 
 
 if __name__ == '__main__':
-    server = app.run_server(host='0.0.0.0', port=7324, dev_tools_silence_routes_logging=False, debug=False)
+    server = app.server
+    app.run_server(host='0.0.0.0', port=7324, dev_tools_silence_routes_logging=False, debug=False)
