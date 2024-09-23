@@ -51,8 +51,9 @@ def extract_scenario_number_from_path(path: str) -> int:
 
 
 scenario_files = glob.glob('../resources/scenarios/scenario_*.json')
+scenario_files = ['resources/scenarios/scenario_1.json']
 
-with open('../resources/users.json', 'r') as f:
+with open('resources/users.json', 'r') as f:
     users = json.load(f)
 usernames = {user['username']: user['password'] for user in users.values()}
 
